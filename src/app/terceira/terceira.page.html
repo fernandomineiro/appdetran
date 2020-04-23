@@ -1,0 +1,31 @@
+
+<ion-content >
+  <div class="new-background-color">
+    <span (click)="volta()" style="color: white; position: relative; left: 5%; font-weight: 500; top: 15px;"><ion-icon id="icon" name="arrow-back-outline"></ion-icon> <p id="en">Inserir chave de acesso</p>  </span>
+  </div>
+    
+<div id="a">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <img src="assets/icone.png">
+      </ion-col>
+      <ion-col size="8">
+        <span>Digite a chave para acessar o(s)</span><br>
+        <span>documento(s)</span><br><br>
+
+        <span id="chave">Chave de acesso</span><br>
+        <input id="in" [(ngModel)]="data.codigo" type="text" ><br><br>
+        <ion-button id="bu" (click)="entrar()" color="#052166">Entrar</ion-button><br>
+        <span id="esqueci">Esqueci minha chave de acesso</span>
+      </ion-col>
+      <ion-col size="2">
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+
+</ion-content>
+ 
