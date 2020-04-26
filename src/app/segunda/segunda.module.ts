@@ -15,7 +15,8 @@ export var options: Partial<IConfig> | (() => Partial<IConfig>);
     FormsModule,
     IonicModule,
     SegundaPageRoutingModule,
-    NgxMaskModule.forRoot(options)
+    NgxMaskModule.forRoot(),
+    
   ],
   declarations: [SegundaPage]
 })

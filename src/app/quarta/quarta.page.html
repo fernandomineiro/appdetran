@@ -1,19 +1,40 @@
 
+
 <ion-content>
+  <ion-app style="z-index: 1;" >
+    <ion-menu  contentId="content1" side="end" type="push" >
+      <ion-header >
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content color="light" >
+        <img style="position: relative; left: 10%; width: 60px; height: 60px;" src="assets/ico.png"><br>
+        <p style="color: #052166; font-size: 16px; font-weight: bold; position: relative; left: 4%">{{nome}}</p>
+        <p style="color: black; font-size: 16px;  position: relative; left: 4%">{{cpf}}</p><br>
+        <div style="background-color: gray; height: 1px; width: 100%; position: relative; margin-bottom: 8%;"></div>
+        <p style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%; "><img style="width: 25px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/01.png">Central de Mensagens</p>
+        <p style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/02.png">Política de Privacidade</p>
+        <p style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/03.png">Termo de Responsabilidade</p>
+        <div style="background-color: gray; height: 1px; width: 100%; position: relative; margin-bottom: 8%;"></div>
+        <p style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/04.png">Configurações</p>
+        <p style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/05.png">Suporte ao Usuário</p>
+        <p style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 25px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/06.png">Suporte a CDT</p>
+        <div style="background-color: gray; height: 1px; width: 100%; position: relative; margin-bottom: 8%;"></div>
+        <p (click)="sair()" style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/07.png">Sair da conta</p>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="content1" main></ion-router-outlet>
+  </ion-app>
+  
   <div class="new-background-color">
-    <ion-grid id="b">
-      <ion-row>
-        <ion-col size="1"> 
- 
-        </ion-col>
-        <ion-col size="8.5">
-          <ion-icon id="a" name="menu-outline"></ion-icon>
-        </ion-col>
-        <ion-col size="2">
-          <ion-icon id="a" name="mail-outline"></ion-icon>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <ion-toolbar color="#052166;" style="background-color: #052166;">
+      
+      <ion-buttons slot="start">
+        <ion-menu-button style="color: white; left: 10%; position: relative; font-weight: bold; top: 5%" autoHide="false"></ion-menu-button>
+      </ion-buttons>
+      <ion-icon id="a" style="left: 80%; position: relative; top: 5px" name="mail-outline"></ion-icon>
+    </ion-toolbar>
     <div id="bola"><p id="pala">{{primeiro}}</p> <img id="cam" src="assets/cam.png"></div>
     
   </div>
@@ -25,14 +46,15 @@
 
       </ion-col>
       <ion-col size="5">
-       <img id="im" (click)="teste()" src="assets/hab.png"><br><br><br><br>
-       <img id="im" src="assets/finan.png">
+       <img id="im" (click)="sair()" src="assets/hab.png"><br><br><br><br>
+       <img id="im"  src="assets/finan.png">
       </ion-col>
       <ion-col id="5">
-        <img id="im" src="assets/vei.png"><br><br><br><br>
-        <img id="im" src="assets/sinal.png">
+        <img id="im"  src="assets/vei.png"><br><br><br><br>
+        <img id="im"  src="assets/sinal.png">
       </ion-col>
     
     </ion-row>
     </ion-grid>
+    
 </ion-content>

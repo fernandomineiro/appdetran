@@ -1,3 +1,6 @@
+.my-custom-menu {
+    --width: 500px;
+  }
 .new-background-color{
     background-color: #052166;
     height: 20%;
@@ -81,13 +84,15 @@ ion-content {
  #pala{
      text-align: center;
      color: white;
-     font-size: 30px;
+     font-size: 50px;
      font-weight: 500;
+     position: relative;
+     top: -30px;
  }
 
  #cam{
      position: relative;
-     top: -20px;
+     top: -80px;
      left: 80%;
      width: 50px;
      height: 50px;

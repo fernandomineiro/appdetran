@@ -35,6 +35,8 @@ export class SegundaPage implements OnInit {
       }else{
         localStorage.setItem("nome", response.nome);
         localStorage.setItem("id", response.id);
+        localStorage.setItem("cpf", response.cpf);
+        
         this.router.navigate(['quarta']);
         
       }
