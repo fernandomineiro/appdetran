@@ -43,13 +43,21 @@ ion-content {
  } 
 
  #ola{
-     position: relative;
-     left: 40%;
-     margin-top: 15%;
+    position: relative;
+    left: 40%;
+    
+    margin-top: 15%;
      font-size: 20px;
      color: #03143f;
+     font-weight: bold;
  }
 
+ #rr{
+    font-size: 20px;
+    color: #03143f;
+    
+ }
+ 
  #oque{
     position: relative;
     left: 25%;
@@ -74,7 +82,7 @@ ion-content {
      text-align: center;
      color: white;
      font-size: 30px;
-     font-weight: 900;
+     font-weight: 500;
  }
 
  #cam{

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { SegundaPageRoutingModule } from './segunda-routing.module';
 
 import { SegundaPage } from './segunda.page';
-
+import { NgxMaskModule, IConfig } from 'ngx-mask'
+export var options: Partial<IConfig> | (() => Partial<IConfig>);
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SegundaPageRoutingModule
+    SegundaPageRoutingModule,
+    NgxMaskModule.forRoot(options)
   ],
   declarations: [SegundaPage]
 })
