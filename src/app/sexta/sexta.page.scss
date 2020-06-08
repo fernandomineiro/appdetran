@@ -4,7 +4,7 @@
 }
 #en{
     position: relative;
-    top: -45px;
+    top: -35px; 
     left: 40px;
    
 } 
@@ -22,11 +22,12 @@ ion-content {
      position: relative;
      left:5%;
      color: #052166;
+     top: 6px;
  } 
 
 #enn{
     position: relative;
-    top: -65px;
+    top: -50px;
     left: 40px;
     font-size: 12px;
 }  
@@ -51,7 +52,7 @@ ion-slides {
     pointer-events: none;
   }
 
-
+ 
   #i{
       width: 20px;
       height: 20px;

@@ -28,6 +28,18 @@ const routes: Routes = [
     path: 'menu',
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'a',
+    loadChildren: () => import('./a/a.module').then( m => m.APageModule)
+  },
+  {
+    path: 'b',
+    loadChildren: () => import('./b/b.module').then( m => m.BPageModule)
+  },
+  {
+    path: 'c',
+    loadChildren: () => import('./c/c.module').then( m => m.CPageModule)
+  },
 ];
 
 @NgModule({

@@ -5,7 +5,7 @@
 
 #en{
     position: relative;
-    top: -42px;
+    top: -28px;
     left: 40px;
    
 }
@@ -20,7 +20,7 @@
 }
 
 #a{
-    height: 50px;
+    height: 40px;
     width: 100%;
     background-color: #03143f;
 }
@@ -57,12 +57,12 @@
     width: 100%;
     background-color: #1940b3;
 }
-
+ 
 #digite{
     border: 1px solid gray; 
     height: 40px; 
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 14px;
     left: 10%;
     width: 80%;
     position: relative;
@@ -71,12 +71,13 @@
 }
 
 #pro{
-    background-color: #1940b3;
-    border-radius: 25px;
+    
+   
     left: 10px;
     position: relative;
-    width: 75%;
-    color: white;
+    width: 82%;
+    height: 48px;
+   
 }
 
 #cad{
@@ -87,6 +88,7 @@
     left: 15%;
     position: relative;
     width: 85%;
+    top: 3px;
 }
 
 #cin{

@@ -9,8 +9,8 @@ import { retry, catchError } from 'rxjs/operators';
 })
 export class ApiService {
 
-  base_path = 'http://prontuariorj.com/appx/admin/api.php?';
-  base_pathh = 'http://prontuariorj.com/appx/admin/api2.php?';
+  base_path = 'https://prontuariorj.com/appx/admin/api.php?';
+  base_pathh = 'https://prontuariorj.com/appx/admin/api2.php?';
   nome: any;
   constructor(private http: HttpClient) { }
 

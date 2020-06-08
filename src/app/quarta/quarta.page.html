@@ -1,15 +1,17 @@
 
 
 <ion-content>
-  <ion-app style="z-index: 1;" >
-    <ion-menu  contentId="content1" side="end" type="push" >
+
+  <ion-app *ngIf="ab != false" style="z-index: 1;"  >
+  
+    <ion-menu   contentId="content1" side="start" type="push" >
       <ion-header >
-        <ion-toolbar>
-          <ion-title>Menu</ion-title>
+        <ion-toolbar >
+          <ion-title >Menu</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content color="light" >
-        <img style="position: relative; left: 10%; width: 60px; height: 60px;" src="assets/ico.png"><br>
+      <ion-content color="#643838" style="z-index: 0;"  >
+        <img style="position: relative; left: 10%; width: 60px; height: 60px; top: 6px;" src="assets/ico.png"><br>
         <p style="color: #052166; font-size: 16px; font-weight: bold; position: relative; left: 4%">{{nome}}</p>
         <p style="color: black; font-size: 16px;  position: relative; left: 4%">{{cpf}}</p><br>
         <div style="background-color: gray; height: 1px; width: 100%; position: relative; margin-bottom: 8%;"></div>
@@ -21,40 +23,50 @@
         <p style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/05.png">Suporte ao Usuário</p>
         <p style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 25px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/06.png">Suporte a CDT</p>
         <div style="background-color: gray; height: 1px; width: 100%; position: relative; margin-bottom: 8%;"></div>
-        <p (click)="sair()" style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/07.png">Sair da conta</p>
+        <p id="myBtn" (click)="sair()" style="position:relative; left: 4%; color: black; font-size: 16px; margin-bottom: 8%;"><img style="width: 20px; height: 20px; position: relative; top: 4px; margin-right: 10%;" src="assets/07.png">Sair da conta</p>
+
       </ion-content>
-    </ion-menu>
+    </ion-menu> 
     <ion-router-outlet id="content1" main></ion-router-outlet>
   </ion-app>
   
-  <div class="new-background-color">
-    <ion-toolbar color="#052166;" style="background-color: #052166;">
+  <div class="new-background-color"  >
+    <ion-toolbar color="#052166;">
       
-      <ion-buttons slot="start">
-        <ion-menu-button style="color: white; left: 10%; position: relative; font-weight: bold; top: 5%" autoHide="false"></ion-menu-button>
+      <ion-buttons slot="start" style=" height: 40px;">
+        <ion-menu-button (click)="a()" style="color: white; font-size: 40px; left: 10%; position: relative; font-weight: bold; top: -2px" autoHide="false"></ion-menu-button>
       </ion-buttons>
-      <ion-icon id="a" style="left: 80%; position: relative; top: 5px" name="mail-outline"></ion-icon>
+      <img id="a" style="left: 80%; position: relative; top: 5px; height: 40px; width: 50px;" src="assets/icomens.png" >
     </ion-toolbar>
     <div id="bola"><p id="pala">{{primeiro}}</p> <img id="cam" src="assets/cam.png"></div>
     
   </div>
-<p id="ola" style="font-weight: bold;">Olá <span id="rr">{{nome}}</span></p>
-
+<p id="ola" style="font-weight: bold;">Olá <span id="rr">{{nome}},</span></p>
+<p style="color: gray; font-size: 12px; position: relative; top: -10px; left: 30%">O que gostaria de fazer hoje?</p>
   <ion-grid>
     <ion-row> 
       <ion-col size="1">
 
       </ion-col>
       <ion-col size="5">
-       <img id="im" (click)="sair()" src="assets/hab.png"><br><br><br><br>
-       <img id="im"  src="assets/finan.png">
+       <img id="im"   (click)="te()" src="assets/hab.png">
+       <p id="pia">Habilitação</p>
+       <br>
+       <img id="im" (click)="ti()" src="assets/finan.png">
+       <p id="pia">Infrações</p>
       </ion-col>
       <ion-col id="5">
-        <img id="im"  src="assets/vei.png"><br><br><br><br>
-        <img id="im"  src="assets/sinal.png">
+        <img id="im" (click)="to()" src="assets/vei.png">
+        <p id="pia">Veículos</p>
+        <br>
+        <img id="im" (click)="tu()" src="assets/sinal.png">
+        <p id="pia">Educação</p>
       </ion-col>
     
     </ion-row>
     </ion-grid>
+    
+  
+  
     
 </ion-content>

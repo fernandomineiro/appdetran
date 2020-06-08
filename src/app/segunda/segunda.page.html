@@ -34,31 +34,32 @@
 </ion-grid>
 <ion-grid>
 <ion-row>
-  <ion-col size="3.2">
+  <ion-col size="4">
     
   </ion-col>
   <ion-col>
-    <img src="assets/a.png" style="width: 140px; height: 90px;">
+    <img src="assets/gov.png" style="width: 110px; height: 60px;">
   </ion-col>
 </ion-row>
 
 </ion-grid>
  
-<div>
+<div> 
   <span style="font-size: 28px; font-weight: bold; position: relative; left: 10%; width: 80%;">Conta do acesso única do</span><br>
   <span style="font-size: 28px; font-weight: bold; position: relative; left: 38%; width: 90%;">Governo</span><br><br>
   <span style="font-size: 15px; font-weight: 500; position: relative; left: 35%; width: 90%;">Informe seu CPF</span>
-</div>
+</div> 
  
 <input type="text" [(ngModel)]="data.cpf" mask='000.000.000-00' [dropSpecialCharacters]="false" name="consultar" id="digite" placeholder="Digite seu CPF">
-
+<p *ngIf="valor == true" style="color: red; font-size: 20px; position: relative; left: 20%; top: 5px">Usuario e/ou senha inválidos</p>
 <ion-grid>
   <ion-row>
     <ion-col size="6">
       <button color="#000" style="height: 40px;" id='cad'>Cadastrar</button>
     </ion-col>
     <ion-col size="6">
-      <button color="#000" style="height: 40px;" (click)="cpf()" id="pro">Proxima</button>
+      <img src="assets/btnproximo.png" id="pro"  (click)="cpf()">
+      
     </ion-col>
   </ion-row>
   </ion-grid>

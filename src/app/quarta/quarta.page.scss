@@ -69,7 +69,7 @@ ion-content {
     color: gray;
     margin-top: -15px;
  }
-
+ 
  #bola{
      width: 100px;
      height: 100px;
@@ -85,15 +85,26 @@ ion-content {
      text-align: center;
      color: white;
      font-size: 50px;
-     font-weight: 500;
+     
      position: relative;
-     top: -30px;
+     top: 40px;
  }
+
+#pia{
+    color:#052166;
+    position: relative;
+    left: 22%;
+    top: -12px;
+    font-weight: 400;
+
+}
 
  #cam{
      position: relative;
-     top: -80px;
+     top: 40px;
      left: 80%;
      width: 50px;
      height: 50px;
  }
+
+ 

@@ -11,6 +11,7 @@ export class SegundaPage implements OnInit {
   data: Cpf;
   nome: any;
   resposta: any;
+  valor: any;
    
   constructor(
     public apiService: ApiService,
@@ -31,6 +32,7 @@ export class SegundaPage implements OnInit {
       console.log(this.nome);
       if(this.nome == 'nada encontrado'){
         this.resposta = "CPF não encontrado";
+        this.valor = true;
         
       }else{
         localStorage.setItem("nome", response.nome);
